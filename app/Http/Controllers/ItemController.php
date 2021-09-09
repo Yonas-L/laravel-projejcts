@@ -39,7 +39,7 @@ class ItemController extends Controller
         $newItem= new Item;
         $newItem->name = $request->item["name"];
         $newItem->save();
-        return this.Item($newItem);
+        return $newItem;
 
     }
 
